@@ -72,9 +72,9 @@ collections:
             name: "apropos"
             widget: "object"
             fields:  
-              - label: "Description"
-                name: "description"
-                widget: "mardown"
+              # - label: "Description"
+              #  name: "description"
+              #  widget: "mardown"
               - label: "Sections"
                 name: "sections"
                 widget: "object"
