@@ -1,0 +1,133 @@
+backend:
+  name: github
+  repo: florianchapon/website
+  branch: gh-pages
+
+publish_mode: editorial_workflow
+
+media_folder: "uploads"
+
+collections:
+  - name: "websitesettings" # Settings site
+    label: "Settings du site"
+    files:
+      - label: "Settings"
+        name: "settings"
+        file: "_config.yml"
+        fields:
+          - {label: "titre", name: "title", widget: "string"}
+          - {label : "email", name: "email", widget: "string"}
+          - {label : "Description", name: "description", widget: "string"}
+          - label: "Footer info"
+            name: "footer"
+            widget: "object"
+            fields:
+              - {label: "Titre", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - label: "social"
+                name: "social"
+                widget: "list"
+                fields:
+                  - {label: "Icone font-awesome", name: "icon", widget: "string"}
+                  - {label: "Nom du lien", name: "name", widget: "string"}
+                  - {label: "Lien réseaux social", name: "link", widget: "string"}
+
+  - name: "Articles"
+    label: "Articles"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Auteur", name: "author", widget: "string"}
+      - {label: "Image d'en tête", name: "image", widget: "image"}
+      - {label: "Texte", name: "body", widget: "markdown"}
+
+  - name: "Page"
+    label: "Pages"
+    folder: "_pages"
+    layout: page
+    create: true
+    slug: "{{slug}}"
+    fields: # The fields for each pages
+      - {label: "Titre", name: "titre", widget: "string"}
+      - {label: "Image bannière", name: "banniere", widget: "image"}
+      - {label: "Texte", name: "body", widget: "markdown"}
+  
+  - name: "homepage"
+    label: "Home page"
+    files:
+      - label: "Home page"
+        name: "home"
+        file: "index.md"
+        fields: # Fields of the home page
+          - label: "Hero header" # Field de la catégorie bannière 
+            name: "heroheader"
+            widget: "object"
+            fields:
+              - {label: "Titre", name: "titre", widget: "string"}
+              - {label: "Sous-titre", name: "soustitre", widget: "string"}
+              - {label: "Image", name: "banniere", widget: "image"}
+          - {label: "intro", name: "intro", widget: "markdown"} #Introduction site
+          - label : "Services" # Services
+            name: "services"
+            widget: "object"
+            fields: 
+              - label: "Service1"
+                name: "service1"
+                widget: "object"
+                fields:
+                - {label: "Titre", name: "titre", widget: "string"}
+                - {label: "Image", name: "image", widget: "image"}
+                - {label: "Description", name: "description", widget: "markdown"}
+              - label: "Service2"
+                name: "service2"
+                widget: "object"
+                fields:
+                - {label: "Titre", name: "titre", widget: "string"}
+                - {label: "Image", name: "image", widget: "image"}
+                - {label: "Description", name: "description", widget: "markdown"}
+              - label: "Service3"
+                name: "service3"
+                widget: "object"
+                fields:
+                - {label: "Titre", name: "titre", widget: "string"}
+                - {label: "Image", name: "image", widget: "image"}
+                - {label: "Description", name: "description", widget: "markdown"}  
+          - label : "Portfolio" # Portfolio
+            name: "portfolio"
+            widget: "list"
+            fields: 
+              - {label: "Categorie", name: "categorie", widget: "select", options: ["logos", "banners", "project", "themes"] }
+              - {label: "Image", name: "image", widget: "image"} 
+          - label: "About me" # About me
+            name: "aboutme"
+            widget: "object"
+            fields: 
+              - {label: "Titre", name: "titre", widget: "string"}
+              - {label: "Description", name: "description", widget: "markdown"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Titre CV", name: "titrecv", widget: "string"}
+              - {label: "Lien CV", name: "liencv", widget: "file"}
+              
+
+  - name: "projets"
+    label: "Projets"
+    folder: "_projets"
+    create: true
+    layout: project
+    slug: "{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Image d'en tête", name: "image", widget: "image"}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - label: "Gallerie"
+        name: "gallerie"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Titre de l'image", name: "titre", widget: "string"}             
+      - {label: "Texte", name: "body", widget: "markdown"}
+
+

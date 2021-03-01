@@ -1,0 +1,30 @@
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+include:
+  - _pages
+  - _projets
+theme: jekyll-theme-cayman
+repository: florianchapon/website
+header_pages:
+  - about
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+  posts:
+    output: true
+    permalink: /blog/:path/
+  projets:
+    output: true 
+    permalink: /:path/  
+title: Florian Chapon • Graphiste, Webdesigner, Chimiste • Grenoble
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - update_boostrap.sh
+email: chapon.florian@gmail.com
+description: Portfolio de Florian Chapon, Webdesigner Graphiste, de formation Chimiste, à Lyon. Création de sites web, Graphismes & Illustrations.
+
+  

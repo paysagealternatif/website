@@ -1,0 +1,38 @@
+<!-- footer -->
+<div class="footer">
+  <div class="full-width">
+    <div style="float:left;">
+      ©
+      <script type="text/javascript" language="javascript">
+        document.write(new Date().getFullYear());
+      </script> 
+         Florian CHAPON, Lyon.
+    </div>
+    <div style="float:right;">
+    <a href="https://www.linkedin.com/in/florianchapon/"><img src="{{ "/assets/linkedin.png" | relative_url }}" style="width:32px;"/></a>
+    </div>
+  <div style="clear: both" />
+  </div>
+</div>	
+<!-- fin footer -->
+
+
+
+<script>
+
+function mail() {
+  var name = encodeURI(document.getElementById("name").value);
+  var email = encodeURI(document.getElementById("email").value);
+  var message = encodeURI(document.getElementById("message").value);
+    
+  var url = "pages/send.php?name="+name+"&email="
+        +email+"&message="
+        +message;
+        
+  $('#test').load(url);	
+  
+  document.getElementById("form").innerHTML = "<font color='green'><b>Mail correctly send.</b></font>";
+
+}
+
+</script>

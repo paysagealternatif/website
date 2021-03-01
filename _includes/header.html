@@ -1,0 +1,78 @@
+<!-- Scrolling effects --><script>
+	$(document).ready(
+	  function() { 
+		$("html").niceScroll({
+			cursorcolor:"rgb(30, 33, 35)",
+			 cursorwidth: "10px",
+			 cursorborder: "1px solid #000000",
+			 background: "rgb(110, 110, 114)",
+			 zindex:"11"
+			});
+	  });
+	</script>
+	
+	
+	<script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html,body').animate({
+			  scrollTop: target.offset().top
+			}, 1000);
+			return false;
+		  }
+		}
+	  });
+	});
+	
+	
+	</script>	
+	
+
+	
+	<div id="home"></div>
+	<header>
+	
+		
+	
+		<!-- computer -->
+		<div class="computer-nav">
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>	
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href=""><img src="{{ "/assets/logo.png" | relative_url }}" style="width:auto;height:80px;"/></a></li>
+				<li><a href="#about">About me</a></li>
+				<li><a href="#contact">Contact</a></li>		
+					
+			</ul>
+		</nav>
+		</div>
+		<!-- mobile -->
+		<div class="mobile-nav">
+		<nav>
+			<ul>
+				<li style="left; width:70%; ">Bienvenue</li>
+				<li id="nav-button" class="nav-button" style="float:right;width:30%;">&#9776;</li>	
+			</ul>
+		</nav>
+		</div>
+		
+		<div id="mobile-nav-open" class="mobile-nav-1">
+		<nav>
+			<ul>
+				<li><  MENU  ></li>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#about">About me</a></li>
+				<li><a href="#contact">Contact</a></li>		
+			</ul>
+		</nav>
+		</div>
+		
+		
+		
+	</header>
