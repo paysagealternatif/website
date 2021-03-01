@@ -68,8 +68,8 @@ collections:
               - {label: "Titre", name: "titre", widget: "string"}
               - {label: "Sous-titre", name: "soustitre", widget: "string"}
               - {label: "Image", name: "banniere", widget: "image"}
-          - label: "A propos"  
-            name: "about"
+          - label: "Apropos" #Field de la catégorie apropos 
+            name: "apropos"
             widget: "object"
             fields:  
               - {label: "Description", name: "description", widget: "mardown"}
