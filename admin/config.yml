@@ -61,55 +61,59 @@ collections:
         name: "home"
         file: "index.md"
         fields: # Fields of the home page
-          - label: "Hero header" # Field de la catégorie bannière 
+          - label: "Bannière" # Field de la catégorie bannière 
             name: "heroheader"
             widget: "object"
             fields:
               - {label: "Titre", name: "titre", widget: "string"}
               - {label: "Sous-titre", name: "soustitre", widget: "string"}
               - {label: "Image", name: "banniere", widget: "image"}
-          - {label: "intro", name: "intro", widget: "markdown"} #Introduction site
-          - label : "Services" # Services
-            name: "services"
+          - label: "A propos"  
+            name: "apropos"
             widget: "object"
-            fields: 
-              - label: "Service1"
-                name: "service1"
+            fields:  
+              - {label: "Description", name: "description", widget: "mardown"}
+              - label: "Sections"
+                name: "sections"
                 widget: "object"
                 fields:
+                  - label: "Section 1"
+                    name: "section1"
+                    widget: "object"
+                    fields:
+                      - {label: "Titre", name: "titre", widget: "string"}
+                      - {label: "Image", name: "image", widget: "image"}
+                      - {label: "Description", name: "description", widget: "string"}
+                  - label: "Section 2"
+                    name: "section2"
+                    widget: "object"
+                    fields:
+                      - {label: "Titre", name: "titre", widget: "string"}
+                      - {label: "Image", name: "image", widget: "image"}
+                      - {label: "Description", name: "description", widget: "string"}   
+            - label: "Services"
+              name: "services"
+              widget: "list"
+              fields:
                 - {label: "Titre", name: "titre", widget: "string"}
-                - {label: "Image", name: "image", widget: "image"}
-                - {label: "Description", name: "description", widget: "markdown"}
-              - label: "Service2"
-                name: "service2"
-                widget: "object"
-                fields:
+                - {label: "Image", name: "image", widget: "image"} 
+                - {label: "Description", name: "description", widget: "string"}  
+            - label: "Gallerie"    
+              name: "gallerie"
+              widget: "list"
+              fields:
                 - {label: "Titre", name: "titre", widget: "string"}
-                - {label: "Image", name: "image", widget: "image"}
-                - {label: "Description", name: "description", widget: "markdown"}
-              - label: "Service3"
-                name: "service3"
-                widget: "object"
-                fields:
-                - {label: "Titre", name: "titre", widget: "string"}
-                - {label: "Image", name: "image", widget: "image"}
-                - {label: "Description", name: "description", widget: "markdown"}  
-          - label : "Portfolio" # Portfolio
-            name: "portfolio"
-            widget: "list"
-            fields: 
-              - {label: "Categorie", name: "categorie", widget: "select", options: ["logos", "banners", "project", "themes"] }
-              - {label: "Image", name: "image", widget: "image"} 
-          - label: "About me" # About me
-            name: "aboutme"
-            widget: "object"
-            fields: 
-              - {label: "Titre", name: "titre", widget: "string"}
-              - {label: "Description", name: "description", widget: "markdown"}
-              - {label: "Image", name: "image", widget: "image"}
-              - {label: "Titre CV", name: "titrecv", widget: "string"}
-              - {label: "Lien CV", name: "liencv", widget: "file"}
-              
+                - {label: "Categorie", name: "categorie", widget: "select", options: ["categorie1", "categorie2", "categorie3"]} 
+                - {label: "Image", name: "image", widget: "image"} 
+            - label: "Avis"
+              name: "avis"
+              widget: "list"
+              fields:
+                - {label: "Titre", name: "titre", widget: "string"} 
+                - {label: "Description", name: "description", widget: "string"}   
+       
+
+
 
   - name: "projets"
     label: "Projets"
