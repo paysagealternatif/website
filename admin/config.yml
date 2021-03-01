@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: florianchapon/website
+  repo: paysagealternatif/website
   branch: gh-pages
 
 publish_mode: editorial_workflow

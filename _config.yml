@@ -5,7 +5,7 @@ include:
   - _pages
   - _projets
 theme: jekyll-theme-cayman
-repository: florianchapon/website
+repository: paysagealternatif/website
 header_pages:
   - about
 collections:
