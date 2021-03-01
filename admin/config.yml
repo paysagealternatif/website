@@ -68,7 +68,7 @@ collections:
               - {label: "Titre", name: "titre", widget: "string"}
               - {label: "Sous-titre", name: "soustitre", widget: "string"}
               - {label: "Image", name: "banniere", widget: "image"}
-          - label: "Apropos" #Field de la catégorie apropos 
+          - label: "A propos" #Field de la catégorie apropos 
             name: "apropos"
             widget: "object"
             fields:  
@@ -91,26 +91,26 @@ collections:
                       - {label: "Titre", name: "titre", widget: "string"}
                       - {label: "Image", name: "image", widget: "image"}
                       - {label: "Description", name: "description", widget: "string"}   
-            - label: "Services"
-              name: "services"
-              widget: "list"
-              fields:
-                - {label: "Titre", name: "titre", widget: "string"}
-                - {label: "Image", name: "image", widget: "image"} 
-                - {label: "Description", name: "description", widget: "string"}  
-            - label: "Gallerie"    
-              name: "gallerie"
-              widget: "list"
-              fields:
-                - {label: "Titre", name: "titre", widget: "string"}
-                - {label: "Categorie", name: "categorie", widget: "select", options: ["categorie1", "categorie2", "categorie3"]} 
-                - {label: "Image", name: "image", widget: "image"} 
-            - label: "Avis"
-              name: "avis"
-              widget: "list"
-              fields:
-                - {label: "Titre", name: "titre", widget: "string"} 
-                - {label: "Description", name: "description", widget: "string"}   
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - {label: "Titre", name: "titre", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"} 
+              - {label: "Description", name: "description", widget: "string"}  
+          - label: "Gallerie"    
+            name: "gallerie"
+            widget: "list"
+            fields:
+              - {label: "Titre", name: "titre", widget: "string"}
+              - {label: "Categorie", name: "categorie", widget: "select", options: ["categorie1", "categorie2", "categorie3"]} 
+              - {label: "Image", name: "image", widget: "image"} 
+          - label: "Avis"
+            name: "avis"
+            widget: "list"
+            fields:
+              - {label: "Titre", name: "titre", widget: "string"} 
+              - {label: "Description", name: "description", widget: "string"}   
        
 
 
