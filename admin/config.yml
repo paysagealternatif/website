@@ -69,7 +69,7 @@ collections:
               - {label: "Sous-titre", name: "soustitre", widget: "string"}
               - {label: "Image", name: "banniere", widget: "image"}
           - label: "A propos"  
-            name: "apropos"
+            name: "about"
             widget: "object"
             fields:  
               - {label: "Description", name: "description", widget: "mardown"}
