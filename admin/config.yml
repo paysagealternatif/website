@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: paysagealternatif/website
-  branch: gh-pages
+  branch: main
 
 publish_mode: editorial_workflow
 
