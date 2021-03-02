@@ -72,7 +72,7 @@ gallerie:
 avis:
   - titre: Florian CHAPON
     description: "Entreprise très réactive effectuant un travail de qualité, tout en
-      respectant les envies et désirs du client à la perfection. Je l'a
+      respectant les envies et désirs du client à la perfection. Je la
       recommande très fortement ! "
   - titre: Client 2
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
