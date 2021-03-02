@@ -23,4 +23,25 @@ apropos:
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
         dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.
       image: /uploads/about-2.jpg
+services:
+  - titre: Service 1
+    image: /uploads/hd-0616.jpg
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+      dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum
+      dolor feugiat at.
+  - description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+      dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum
+      dolor feugiat at.
+    titre: Service 2
+    image: /uploads/hd-0615.jpg
+  - titre: Service 3
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+      dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum
+      dolor feugiat at.
+    image: /uploads/hd-0617.jpg
+  - titre: Service 4
+    image: /uploads/about-2.jpg
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+      dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum
+      dolor feugiat at.
 ---
