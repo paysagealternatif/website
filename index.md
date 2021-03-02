@@ -14,7 +14,7 @@ apropos:
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
   sections:
     section1:
-      titre: Entretient
+      titre: Entretien
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
         dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.
       image: /uploads/hd-0615.jpg
