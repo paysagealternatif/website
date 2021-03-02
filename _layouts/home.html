@@ -80,11 +80,11 @@ layout: default
 			{% for gallerie in page.gallerie %}
 			<div class="col-sm-6 col-md-4 {{gallerie.categorie}}">
 				<div class="portfolio-item">
-				<div class="hover-bg"> <a href="{{site.baseurl}}{{gallerie.image}}" loading="lazy" title="Project Title" data-lightbox-gallery="gallery1">
+				<div class="hover-bg"> <a href="{{site.baseurl}}{{gallerie.image}}" title="Project Title" data-lightbox-gallery="gallery1">
 					<div class="hover-text">
 					<h4>{{gallerie.titre}}</h4>
 					</div>
-					<img src="{{site.baseurl}}{{gallerie.image}}" loading="lazy" class="img-responsive" alt="Project Title"> </a> </div>
+					<img data-src="{{site.baseurl}}{{gallerie.image}}" class="img-responsive" alt="Project Title"> </a> </div>
 				</div>
 			</div>
 			{% endfor %}
