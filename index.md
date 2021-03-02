@@ -14,15 +14,15 @@ apropos:
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
   sections:
     section1:
-      titre: Garden Care
+      titre: Entretient
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
         dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.
-      image: /uploads/about-1.jpg
+      image: /uploads/hd-0615.jpg
     section2:
-      titre: Lawn Care
+      titre: Remise en état
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
         dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.
-      image: /uploads/about-2.jpg
+      image: /uploads/hd-0618.jpg
 services:
   - titre: Service 1
     image: /uploads/hd-0616.jpg
@@ -74,4 +74,16 @@ avis:
     description: "Entreprise très réactive effectuant un travail de qualité, tout en
       respectant les envies et désirs du client à la perfection. Je l'a
       recommande très fortement ! "
+  - titre: Client 2
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+      dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum
+      dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+  - description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+      dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum
+      dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+    titre: Client 3
+  - description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+      dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum
+      dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+    titre: Client 4
 ---
