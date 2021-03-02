@@ -14,7 +14,7 @@ apropos:
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
   sections:
     section1:
-      titre: Entretient
+      titre: Entretien
       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
         dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.
       image: /uploads/hd-0615.jpg
@@ -86,4 +86,14 @@ avis:
       dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum
       dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
     titre: Client 4
+contact:
+  tel: 07 86 34 57 79
+  mail: paysage.alternatif@gmail.com
+  heures: |-
+    Ouvert de xxH à xxH
+
+    du Lundi au Vendredi
+  adresse: |-
+    54 Bis pl Bascule,
+    38160 CHATTE
 ---
