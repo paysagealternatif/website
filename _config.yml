@@ -18,13 +18,13 @@ collections:
   projets:
     output: true 
     permalink: /:path/  
-title: Florian Chapon • Graphiste, Webdesigner, Chimiste • Grenoble
+title: Paysages Alternatifs
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - update_boostrap.sh
-email: chapon.florian@gmail.com
-description: Portfolio de Florian Chapon, Webdesigner Graphiste, de formation Chimiste, à Lyon. Création de sites web, Graphismes & Illustrations.
+email: paysage.alternatif@gmail.com
+description: Entreprise paysagiste basée à Chatte, dans l'isère. 
 
   
