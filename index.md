@@ -3,7 +3,7 @@ heroheader:
   titre: Paysages Alternatifs
   soustitre: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
     dapibus leo nec ornare diam.
-  banniere: /uploads/about-1.jpg
+  banniere: /uploads/hd-0615.jpg
 apropos:
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus
