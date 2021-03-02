@@ -123,43 +123,41 @@ layout: default
   <div id="contact" class="text-center">
 	<div class="container">
 	  <div class="section-title text-center">
-		<h2>Contact Us</h2>
+		<h2>Nous contacter</h2>
 		<hr>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
 	  </div>
 	  <div class="col-md-10 col-md-offset-1 contact-info">
 		<div class="col-md-4">
-		  <h3>Address</h3>
+		  <h3>Addresse</h3>
 		  <hr>
 		  <div class="contact-item">
-			<p>4321 California St,</p>
-			<p>San Francisco, CA 12345</p>
+			{{page.contact.adresse | markdownify}}
 		  </div>
 		</div>
 		<div class="col-md-4">
-		  <h3>Working Hours</h3>
+		  <h3>Heures d'ouverture</h3>
 		  <hr>
 		  <div class="contact-item">
-			<p>Monday-Saturday: 07:00 - 18:00</p>
-			<p>Sunday: CLOSED</p>
+			{{page.contact.heures | markdownify}}
 		  </div>
 		</div>
 		<div class="col-md-4">
-		  <h3>Contact Info</h3>
+		  <h3>Contact</h3>
 		  <hr>
 		  <div class="contact-item">
-			<p>Phone: +1 123 456 1234</p>
-			<p>Email: info@company.com</p>
+			<p><i class="fa fa-phone" aria-hidden="true"></i> {{page.contact.tel}}</p>
+			<p><i class="fa fa-envelope"></i><a href="mailto:{{page.contact.mail}}"> {{page.contact.mail}}</a></p>
 		  </div>
 		</div>
 	  </div>
 	  <div class="col-md-8 col-md-offset-2">
-		<h3>Leave us a message</h3>
+		<h3>Laissez nous un message</h3>
 		<form name="sentMessage" id="contactForm" novalidate>
 		  <div class="row">
 			<div class="col-md-6">
 			  <div class="form-group">
-				<input type="text" id="name" class="form-control" placeholder="Name" required="required">
+				<input type="text" id="name" class="form-control" placeholder="Nom" required="required">
 				<p class="help-block text-danger"></p>
 			  </div>
 			</div>
@@ -175,7 +173,7 @@ layout: default
 			<p class="help-block text-danger"></p>
 		  </div>
 		  <div id="success"></div>
-		  <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
+		  <button type="submit" class="btn btn-custom btn-lg">Envoyer</button>
 		</form>
 	  </div>
 	</div>

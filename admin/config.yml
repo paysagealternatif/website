@@ -110,10 +110,16 @@ collections:
             widget: "list"
             fields:
               - {label: "Titre", name: "titre", widget: "string"} 
-              - {label: "Description", name: "description", widget: "string"}   
-       
-
-
+              - {label: "Description", name: "description", widget: "string"} 
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Adresse", name: "adresse", widget: "markdown"}  
+              - {label: "Heure d'ouverture", name: "heures", widget: "markdown"}  
+              - {label: "Telephone", name: "tel", widget: "string"}    
+              - {label: "Email", name: "mail", widget: "string"} 
+  
 
   - name: "projets"
     label: "Projets"
